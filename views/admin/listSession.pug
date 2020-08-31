@@ -25,7 +25,7 @@ block content
                             td #{session.totalPrice}    
                             td
                                 .action-wrapper(width="100%", style="display: flex; justify-content: space-around")
-                                    a.btn.btn-success(href="/sessions/" + session.id + "/complete", style="font-size: 10px")
+                                    a.btn.btn-success(href="#", style="font-size: 10px")
                                         span(class="material-icons") create
-                                    a.btn.btn-danger.ml-2(href="/sessions/" + session.id , style="font-size: 10px")
+                                    a.btn.btn-danger.ml-2(href="/admin/" + session._id + '/delete', style="font-size: 10px")
                                         span(class="material-icons") delete  

@@ -13,6 +13,7 @@ var upload = multer({ dest: './public/uploads/' });
 
 // router.get('/transactions', controller.transactions);
 router.get('/listSession', controller.listSession);
+router.get('/:sessionId/delete', controller.deleteSession)
 
 router.get('/',controller.index);
 router.get('/listUser', controller.listUser);

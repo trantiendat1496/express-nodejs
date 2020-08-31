@@ -161,3 +161,12 @@ module.exports.listSession = async function(req, res) {
         
     })
 }
+
+
+
+module.exports.deleteSession = async function(req, res){
+    const sessionId = req.signedCookies.sessionId;
+    await Session.remove({_id:sessionId});
+    res.redirect('back');
+
+}
