@@ -33,7 +33,4 @@ router.get('/:id', controller.deleteUser);
 
 
 
-
-
-
 module.exports = router;

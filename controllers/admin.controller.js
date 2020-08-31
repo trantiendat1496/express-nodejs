@@ -165,7 +165,7 @@ module.exports.listSession = async function(req, res) {
 
 
 module.exports.deleteSession = async function(req, res){
-    const sessionId = req.signedCookies.sessionId;
+    const sessionId = req.params.sessionId;
     await Session.remove({_id:sessionId});
     res.redirect('back');
 
